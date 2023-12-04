@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="flex justify-center mt-[40px] h-screen  p-10">
+        <form class="bg-gray-500 w-[400px] p-10 rounded  mt-10 ">
+            <p class="bg-red-200 py-3  " id="error" style="display: none;"> <span class="ml-10"></span>fill out the forn </p><br>
+            <!-- <span class="text-red-500 p-3" id="error"></span><br> -->
+            <label>Enter your name</label><br>
+            <input class="w-[300px] py-1 rounded outline-0 " type="text" id="username" /><br>
+            <label>Enter your passsword</label><br>
+            <input class="w-[300px] py-1 rounded outline-0 " type="password" id="password" onkeyup="chechpassword()"/>
+            <br>
+            <span id="passswordText"></span><br>
+            <label>confirm your passsword</label><br>
+        <span id="passworderror"></span>
+            <input class="w-[300px] py-1 rounded outline-0 " type="text" id="confirm" /><br>
+            <button id="btn" class="bg-white text-black  rounded hover:bg-red-500 p-2 py-2 mt-10 w-[300px]"
+                type="button">regester</button>
+        </form>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
